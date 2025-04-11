@@ -1,0 +1,63 @@
+<!Doctype Html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey form</title>
+</head>
+<body>
+  <h1 id="title">Praizco Hair Care Experience Survey</h1>
+  <p id="description">Thank you for taking the time to help us improve our services at Praizco.</p>
+  <form id="survey-form">
+  <fieldset>
+    <label id="name-label"  class="block-label">First Name:<br> <input type="text" id='name' required placeholder="Enter your Name"></label>    
+<label id="email-label">Email: <input type="email" id="email" required placeholder="e.g. grey@gmail.com"></label>
+
+<label></label>
+<label id="number-label">Age (optional)<input type="number" id='number' min="13" max="60" required placeholder="age"></label>
+</fieldset>
+
+  <fieldset>
+<label>
+   Which option best describes your current role?
+   <select id="dropdown">
+     <option>select an option</option>
+     <option>Student</option>
+     <option>Working Professional</option>
+     <option>Business Owner</option>
+     <option>Hair Stylist</option>
+     <option>Other</option>
+   </select>
+</label>
+  </fieldset>
+  <fieldset>
+<legend>Would you recommend Praizco’s hair care services to a friend?
+</legend>
+<label  class="inline-label" for=""><input type="radio" checked name="recommend" id="definitely" value="definitely" class="inline"> Definitely</label>
+<label for=""><input type="radio" name="recommend" id="maybe" value="Maybe" class="inline"> Maybe</label>
+<label for=""><input type="radio" name="recommend" id="notSure" value="Not Sure" class="inline"> Not Sure</label>
+  </fieldset>
+  <fieldset>
+<label>What is your favorite feature of Praizco’s services?</label>
+<label><input type="checkbox" value="1" class="inline"> Hair Treatment</label>
+<label><input type="checkbox" value="2" class="inline"> Styling</label>
+<label><input type="checkbox" value="3" class="inline"> Customer Service</label>
+<label><input type="checkbox" value="4" class="inline"> Product Recommendations</label>
+<label for=""><input type="checkbox" id='' value="5" class="inline"> Affordability</label>
+  </fieldset>
+  <fieldset>
+<label>What would you like to see improved? (Check all that apply)</label>
+<label for=""><input type="checkbox" value="1" id='' class="inline"> Hair Treatment Options</label>
+<label for=""><input type="checkbox" value="2" id='' class="inline"> Styling Techniques</label>
+<label for=""><input type="checkbox" value="3" id='' class="inline"> Product Availability</label>
+<label for=""><input type="checkbox" value="4" id='' class="inline"> Appointment Scheduling</label>
+<label for=""><input type="checkbox" value="5" id='' class="inline"> Customer Care</label>
+  </fieldset>
+  <fieldset>
+    <label>Any comments or suggestions?</label>
+    <textarea rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+</fieldset>
+  <input id='submit' type="submit" name="Submit" value="submit">
+  </form>
+</body>
+</html>
